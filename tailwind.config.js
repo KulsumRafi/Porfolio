@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2563EB",      // Elegant blue
-        accent: "#7C3AED",       // Soft purple
-        dark: "#0F172A",         // Deep navy
-        lightbg: "#F8FAFC"       // Soft background
+        primary: "#778da9",      // Elegant blue
+        accent: "#1b263b",       // Soft purple
+        dark: "#0c1b3d",         // Deep navy
+        lightbg: "#e0e1dd"       // Soft background
       }
     },
   },
