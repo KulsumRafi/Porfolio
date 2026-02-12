@@ -13,10 +13,11 @@ export default function Contact() {
         <a href="mailto:rkulsum04@gmail.com" className="text-primary">
           Email
         </a>
-        <a href="https://linkedin.com" target="_blank" className="text-primary">
+        <a href="https://www.linkedin.com/in/kulsum-rafi/" target="_blank" className="text-primary">
           LinkedIn
         </a>
       </div>
     </section>
   );
 }
+
