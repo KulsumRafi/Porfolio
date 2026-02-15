@@ -17,7 +17,7 @@ export default function Hero() {
           SQL, Python, and Power BI to turn raw data into strategic insight.
         </p>
 
-        <div className="flex justify-center gap-6 flex-wrap">
+        <div className="flex justify-center gap-6 flex-wrap gap-6 mt-8">
           <a
             href="#projects"
             className="bg-primary px-8 py-3 rounded-2xl shadow-lg hover:scale-105 transition"

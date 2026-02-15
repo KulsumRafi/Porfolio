@@ -6,7 +6,7 @@ export default function Navbar() {
           Kulsum Rafi
         </h1>
 
-        <div className="space-x-8 text-sm">
+        <div className="flex gap-8 text-sm">
           <a href="#about" className="hover:text-accent px-2">About</a>
           <a href="#skills" className="hover:text-accent px-2">Skills</a>
           <a href="#projects" className="hover:text-accent px-2">Projects</a>
