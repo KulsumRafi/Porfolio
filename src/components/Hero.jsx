@@ -17,10 +17,10 @@ export default function Hero() {
           SQL, Python, and Power BI to turn raw data into strategic insight.
         </p>
 
-        <div className="flex justify-center gap-6 flex-wrap gap-6 mt-8">
+        <div className="flex justify-center items-center gap-6 flex-wrap mt-8">
           <a
             href="#projects"
-            className="bg-primary px-8 py-3 rounded-2xl shadow-lg hover:scale-105 transition"
+            className="inline-block bg-primary px-8 py-3 rounded-2xl shadow-lg hover:scale-105 transition"
           >
             View Projects
           </a>
@@ -28,7 +28,7 @@ export default function Hero() {
           <a
             href="https://github.com/kulsumrafi"
             target="_blank"
-            className="border border-white px-8 py-3 rounded-2xl hover:bg-white hover:text-dark transition"
+            className="inline-block border border-white px-8 py-3 rounded-2xl hover:bg-white hover:text-dark transition"
           >
             GitHub
           </a>
