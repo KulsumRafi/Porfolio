@@ -1,6 +1,24 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+  const navigate = useNavigate();
+
+  const scrollToSection = (id) => {
+    if (window.location.hash !== "#/") {
+      // Navigate to homepage first
+      navigate("/");
+
+      // Wait a tiny bit, then scroll
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: "smooth" });
+      }, 50);
+    } else {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="min-h-screen flex items-center justify-center bg-dark text-white text-center px-6">
       <motion.div
@@ -17,10 +35,11 @@ export default function Hero() {
           SQL, Python, and Power BI to turn raw data into strategic insight.
         </p>
 
-        <div className="flex justify-center items-center gap-6 flex-wrap mt-8">
+        <div className="flex justify-center space-x-6 mt-8">
           <a
             href="#projects"
-            className="inline-block bg-primary px-8 py-3 rounded-2xl shadow-lg hover:scale-105 transition"
+            className="inline-block bg-primary px-8 py-3 rounded-2xl shadow-lg hover:scale-105 transition mr-6"
+            onClick={(e) => { e.preventDefault(); scrollToSection("projects"); }}
           >
             View Projects
           </a>
